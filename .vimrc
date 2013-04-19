@@ -23,9 +23,16 @@ Bundle 'groenewege/vim-less'
 Bundle 'bbommarito/vim-slim'
 Bundle 'kien/ctrlp.vim'
 Bundle 'scrooloose/syntastic'
+Bundle 'tpope/vim-surround'
+Bundle 'tomtom/tcomment_vim'
+Bundle 'scrooloose/nerdtree'
+Bundle 'tomasr/molokai'
+Bundle 'Townk/vim-autoclose'
+Bundle 'vim-scripts/matchit.zip'
 
-" 字体
-set guifont=monaco\ 10
+set t_Co=256
+colorscheme  molokai
+set guifont=DejaVu\ Sans\ YuanTi\ Mono\ 10
 
 set nobackup
 set nowritebackup
@@ -106,3 +113,4 @@ let g:syntastic_mode_map = { 'passive_filetypes': ['scss', 'slim'] }
 nmap <A-up> :lprev<cr>
 nmap <A-down> :lnext<cr>
 nmap <A-right> :ll<cr>
+map <C-n> :NERDTreeToggle<CR>

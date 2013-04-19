@@ -5,4 +5,9 @@ set guioptions-=L "gui的左边的滑动条
 set guioptions-=m "gui的菜单
 
 set cul
-colorscheme desert
+colorscheme molokai
+"键绑定设置
+ map <C-z> :u<CR>
+ map <C-t> :tabnew<CR>
+ map <C-left> :tabp<CR>
+ map <C-right> :tabn<CR>

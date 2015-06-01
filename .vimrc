@@ -16,10 +16,16 @@ Bundle 'gmarik/vundle'
 Bundle 'Align'
 Bundle 'tpope/vim-rails'
 Bundle 'msanders/snipmate.vim'
-Bundle 'scrooloose/nerdtree'
+"Bundle 'drmingdrmer/xptemplate'
 Bundle 'kchmck/vim-coffee-script'
+Bundle 'othree/yajs.vim'
+Bundle 'dsawardekar/ember.vim'
+Bundle 'mustache/vim-mustache-handlebars'
 Bundle 'hallison/vim-markdown'
 Bundle 'groenewege/vim-less'
+Bundle 'parkr/vim-jekyll'
+Bundle 'hail2u/vim-css3-syntax'
+Bundle 'othree/html5.vim'
 "Bundle 'jpalardy/vim-slim'
 Bundle 'kien/ctrlp.vim'
 Bundle 'scrooloose/syntastic'
@@ -57,13 +63,22 @@ set autoindent
 set mouse=a
 
 "指标符宽度
-set tabstop=4
-set shiftwidth=4
+set tabstop=2
+set shiftwidth=2
 set expandtab
 set smarttab
 
+set encoding=utf-8
+set ambiwidth=double
+
 " Display extra whitespace
-set list listchars=tab:»·,trail:·
+"set list listchars=tab:»·,trail:·
+
+if has("autocmd")
+  autocmd BufRead,BufNewFile *.php set filetype=html.php
+  autocmd BufRead,BufNewFile *.hbs set filetype=html.hbs
+  autocmd BufRead,BufNewFile *.scss set filetype=css.scss
+endif
 
 autocmd FileType make     set noexpandtab
 autocmd FileType python   set noexpandtab
@@ -72,6 +87,7 @@ autocmd FileType ruby,rdoc set tabstop=2 shiftwidth=2
 autocmd FileType html set tabstop=2 shiftwidth=2
 autocmd FileType javascript set tabstop=2 shiftwidth=2
 autocmd FileType coffee set tabstop=2 shiftwidth=2
+autocmd FileType css set tabstop=2 shiftwidth=2
 au! BufRead,BufNewFile *.json setfiletype json
 
 fun! StripTrailingWhitespace()

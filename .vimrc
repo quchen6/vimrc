@@ -19,25 +19,30 @@ Bundle 'msanders/snipmate.vim'
 "Bundle 'drmingdrmer/xptemplate'
 Bundle 'kchmck/vim-coffee-script'
 Bundle 'othree/yajs.vim'
+Bundle 'mxw/vim-jsx'
 Bundle 'dsawardekar/ember.vim'
+Bundle 'heartsentwined/vim-emblem'
 Bundle 'mustache/vim-mustache-handlebars'
 Bundle 'hallison/vim-markdown'
 Bundle 'groenewege/vim-less'
-Bundle 'parkr/vim-jekyll'
+"Bundle 'parkr/vim-jekyll'
 Bundle 'hail2u/vim-css3-syntax'
 Bundle 'othree/html5.vim'
-"Bundle 'jpalardy/vim-slim'
+Bundle 'slim-template/vim-slim'
+"Bundle 'tpope/vim-haml'
 Bundle 'kien/ctrlp.vim'
 Bundle 'scrooloose/syntastic'
 Bundle 'tpope/vim-surround'
 Bundle 'tomtom/tcomment_vim'
 Bundle 'scrooloose/nerdtree'
 Bundle 'tomasr/molokai'
+"Bundle 'NLKNguyen/papercolor-theme'
 Bundle 'Townk/vim-autoclose'
 Bundle 'vim-scripts/matchit.zip'
 
 set t_Co=256
 colorscheme  molokai
+"colorscheme PaperColor-Dark
 set guifont=DejaVu\ Sans\ YuanTi\ Mono\ 10
 
 set nobackup
